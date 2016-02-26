@@ -1,21 +1,25 @@
-<!doctype html>
+echo "What should this file's name be? (do not include .html)"
+read blogFile
+echo "What will the title of the blog be?"
+read blogTitle
+echo "<!doctype html>
 <html lang='en'>
 
 <head>
-  <link rel="stylesheet" href="./style/css/style.css">
-  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-  <script src="script.js"></script>
-  <title>DBURKE - INDEX</title>
+  <link rel=\"stylesheet\" href=\"./style/css/style.css\">
+  <script src=\"http://code.jquery.com/jquery-latest.min.js\" type=\"text/javascript\"></script>
+  <script src=\"script.js\"></script>
+  <title>DBURKE - BLOG</title>
 </head>
 
 <body>
 
-<div class="left">
+<div class=\"left\">
   <br>
   <center><a href='https://github.com/DBurkeGGC'><img src='./pictures/icon_grey.png'></img></a></center>
   <br>
   <br>
-  <div id="cssmenu">
+  <div id=\"cssmenu\">
     <ul>
       <li><a href='index.html'><span>HOME</span></a></li>
       <li><a href='resume.html'><span>RESUME</span></a></li>
@@ -42,17 +46,31 @@
     </ul>
   </div>
 </div>
-
 <div class="main">
-  <h1>ITEC 3870 WEBPAGE PROJECT - HOME</h1><br>
-  <hr><br>
-  <p>Greetings:</p>
-  <p>My name is <a href="mailto:dburke.ggc@gmail.com">Dale Burke</a>, and you have stumbled upon my webpage project for  ITEC 3870!
-  Bearing in mind that some features may be non-functional, you are welcome to browse at your leisure.</p>
-  <p>I am presently enrolled at Georgia Gwinnett College, pursuing a degree (Bachelor of Science -
-  Information Technology) with my primary focus being software development.</p>
-  <p>If you have any questions or comments, please feel free to contact me at the address provided in the contact section.</p>
-</div>
+<h1>ITEC 3870 WEBPAGE PROJECT - BLOG</h1><br>
+<hr><br>
+<h2>$blogTitle</h2><br>" >> $blogFile.html
 
+
+while true
+do
+  echo "Please enter the address of your image:"
+  read imageAddress
+  echo "Please enter the title of your image:"
+  read imageTitle
+  echo "Please supply a caption for your image:"
+  read imageCaption
+  echo "<p><u><i>$imageTitle</i></u></p>
+  <h3><img border=1 src='$imageAddress' width=460></img></h3>
+  <p>$imageCaption</p><br><br>" >> $blogFile.html
+  echo "Would you like to add another image? (Y/N)"
+  read response
+  if [ "$response" != 'Y' -a "$response" != 'y' ]
+  then
+    break
+  fi
+done
+
+echo "</div>
 </body>
-</html>
+</html>" >> $blogFile.html
