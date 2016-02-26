@@ -1,115 +1,74 @@
-<html>
+<!doctype html>
+<html lang='en'>
 
 <head>
-    <title>Dale's Resume
-    </title>
-    <style>
-        body {
-            background-color: gray;
-        }
-        
-        ul li {
-            display: inline;
-            margin-left: 10px;
-        }
-        
-        .container {
-            border-style: outset;
-            background-color: silver;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            margin-left: 30px;
-            margin-right: 30px;
-            max-width: 600px;
-            text-align: left;
-        }
-        
-        .bodytext {
-            background-color: silver;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        
-        .h3txt {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        
-        .h4txt {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: 20px;
-            margin-right: 10px;
-        }
-    </style>
+  <link rel="stylesheet" href="./style/css/style.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="script.js"></script>
+  <title>DBURKE - RESUME</title>
 </head>
 
-<center>
 <body>
-    <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li><a href="https://github.com/DBurkeGGC/DBurkeGGC.github.io">Projects</a>
-        </li>
-        <li>About Me
-        </li>
-    </ul>
-    <div class="container">
-        <div class="h3txt">
-            <h3>Dale B.
-            <br>
-            <br>
-            <center>
-            <img src="confus.jpg"></img>
-            </center>
-            </h3>
-            Phone:
-            <br>
-            555-5555
-        </div>
-        <hr/>
-        <div class="h4txt">
-            <h4>Objective</h4>
-            Get hired, duh.
-            <br>
-            Get situated with some organization that will foster my growth as a software professional?
-        </div>
-        <hr/>
-        <div class="h4txt">
-            <h4>Education</h4>
-            GGC (some sort of degree pending)
-        </div>
-        <hr/>
-        <div class="h4txt">
-            <h4>Projects</h4>
-            Text games, chess game, various little applications..
-            <br>
-            Link some of that stuff here?
-        </div>
-        <hr/>
-        <div class="h4txt">
-            <h4>Technical Skills</h4>
-            <li>Java stuff..
-            </li>
-            <li>COBOL..
-            </li>
-            <li>Database stuff..
-            </li>
-            <li>Things from ITEC 3870?
-            </li>
-        </div>
-        <hr/>
-        <div class="h4txt">
-            <h4>Additional Information</h4>
-            I like money!
-        </div>
-    </div>
-</body>
-</center>
 
+<div class="left">
+  <br>
+  <center><a href='https://github.com/DBurkeGGC'><img src='./pictures/icon_grey.png'></img></a></center>
+  <br>
+  <br>
+  <div id="cssmenu">
+    <ul>
+      <li><a href='index.html'><span>HOME</span></a></li>
+      <li><a href='resume.html'><span>RESUME</span></a></li>
+      <li class='has-sub'><a href='projects.html'><span>PROJECTS&nbsp&nbsp&nbsp></span></a>
+        <ul>
+          <li class='has-sub'><a href='projects.html'><span>MINI-PROJECTS&nbsp&nbsp&nbsp></span></a>
+            <ul>
+              <li><a href='http://mini-04.herokuapp.com/'>NUMBER TO EXCEL</a></li>
+              <li><a href='http://leapyear.herokuapp.com/'>LEAP YEAR EVAL</a></li>
+              <li><a href='http://mini-03.herokuapp.com/'>SEMESTER LIST</a></li>
+              <li><a href='http://mini05.herokuapp.com/'>QUIZ EXAMPLE</a></li>
+            </ul>
+          </li>
+          <li><a href='https://github.com/DBurkeGGC'>GITHUB</a></li>
+        </ul>
+      </li>
+      <li class='has-sub'><a href='misc.html'><span>OTHER&nbsp&nbsp&nbsp></span></a>
+      <ul>
+          <li><a href='misc.html'>MISCELLANEOUS</a></li>
+          <li><a href='blog.html'>BLOG POST</a></li>
+      </ul>
+      </li>
+      <li><a href='contact.html'><span>CONTACT</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="main">
+  <h1>ITEC 3870 WEBPAGE PROJECT - RESUME</h1><br>
+  <hr><br>
+  <h2>Dale Burke</h2>
+  <p>E-mail: <a href="mailto:dburke.ggc@gmail.com">dburke.ggc@gmail.com</a><br>
+  Website: <a href="DBurkeGGC.github.io">ITEC 3870 WEBPAGE PROJECT</a></p>
+  <h2>Objective</h2>
+  <p>Educational and employment opportunities in the fields of 
+  software development and database administration.</p>
+  <h2>Projects</h2>
+  <p><a href='https://github.com/DBurkeGGC/chess'>Chess Game</a><br>
+  - Classic game of chess, written in Java<br>
+  - Demonstrates use of interfaces, inheritance, GUI elements<br>
+  - Completed as lead programmer in 3-man team
+  </p>
+  
+  <h2>Education</h2>
+  <p><a href='http://www.ggc.edu/'>Georgia Gwinnett College</a> (2014-present)<br>
+  Pursuing degree in Information Technology, Software Development focus<br>
+  4.0 Major (Info Tech) GPA / 3.82 Overall</p>
+  
+  <h2>Technical Skills</h2>
+  <p><b><u>Languages:</u></b>&nbsp&nbsp&nbsp Java; COBOL; C#; Ruby<br>
+  <b><u>Systems:</u></b>&nbsp&nbsp&nbsp Windows; Macintosh; Linux<br>
+  <b><u>Internet Technology:</u></b>&nbsp&nbsp&nbsp HTML; c9.io; github.com<br>
+  <b><u>Database:</u></b>&nbsp&nbsp&nbsp SQL; MS SQL Server; MySQL; SAP (Oracle)</p><br>
+</div>
+</body>
 </html>

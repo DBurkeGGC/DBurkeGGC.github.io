@@ -1,0 +1,158 @@
+/* SECTIONS */
+
+body {
+  background: #BBBDCC;
+}
+
+h1 {
+  width: 600px;
+}
+
+br {
+  width: 1000px;
+}
+
+p {
+  width: 600px;
+  color: #444444;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 150%;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+h2 {
+  color: #444444;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 150%;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+h2:after {
+  content: ' ';
+  display: block;
+  border: 1px dotted #666666;
+  width: 625px;
+}
+
+h3 {
+  margin-left: 110px;
+}
+
+.left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  font-size: 20px;
+  height:900px;
+  background: linear-gradient(#999BAA, #BBBDCC);
+}
+
+.main {
+  left: 200px;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+  color: #444444;
+  background: #BBBDCC;
+  padding: 20px;
+  width: 1000px;
+}
+
+.left,
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: absolute;
+}
+
+
+/* CSS MENU */
+
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+#cssmenu ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#cssmenu ul li:hover {
+  position: relative;
+  cursor: default;
+}
+
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 600;
+  width: 100%;
+}
+
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+
+#cssmenu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+#cssmenu a {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#cssmenu {
+  font-weight: 600;
+  width: 200px;
+}
+
+#cssmenu li:hover,
+#cssmenu li.active {
+  background: #444444;
+}
+
+#cssmenu li:hover > a,
+#cssmenu li.active > a {
+  color: #FFF;
+}
+
+#cssmenu a {
+  color: #444444;
+  line-height: 160%;
+  padding: 16px 8px 16px 28px;
+  width: 164px;
+}
+
+#cssmenu ul ul {
+  width: 200px;
+}
+
+#cssmenu ul ul li {
+  background: #555555;
+  opacity:.9;
+}
+
+#cssmenu ul ul li:hover {
+  background: #444444;
+  opacity:1;
+}
+
+#cssmenu ul ul li a {
+  color: #DDD;
+}
